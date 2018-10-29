@@ -1,0 +1,31 @@
+# == In this configuration, you set up Alchemy's element layouts.
+#
+# For further information please see http://guides.alchemy-cms.com/stable/elements.html
+
+- name: article
+  hint: true
+  unique: true
+  contents:
+  - name: headline
+    type: EssenceText
+    default: :article_headline
+    hint: true
+  - name: picture
+    type: EssencePicture
+    hint: true
+  - name: text
+    type: EssenceRichtext
+    default: :article_text
+    hint: true
+
+- name: main_title
+  unique: true
+  contents:
+  - name: h1
+    type: EssenceText
+    default: :main_title
+    hint: true
+  - name: h2
+    type: EssenceText
+    default: :main_title
+    hint: true
