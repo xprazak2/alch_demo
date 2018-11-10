@@ -1,11 +1,11 @@
-<div class="ui inverted vertical masthead center aligned segment">
+<%= render 'shared/header' %>
 
-  <%= render 'shared/header' %>
-
-  <div class="ui text container">
+<div class="promo-hero promo-hero-bg-color">
+  <div class="promo-hero-content">
     <%= render_elements %>
-    <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+    <div class="promo-hero-ctas">
+      <a href="#" class="promo-section-cta button primary">Order Now!</a>
+      <a href="#" class="promo-section-cta button white-hollow">Learn More</a>
+    </div>
   </div>
-
-  <%= render_elements %>
-<div>
+</div>

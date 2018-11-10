@@ -1,0 +1,12 @@
+@import '_settings';
+
+.top-menu {
+  background-color: $dark-gray;
+  a {
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

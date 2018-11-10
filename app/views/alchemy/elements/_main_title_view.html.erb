@@ -1,10 +1,10 @@
 <%- cache(element) do -%>
   <%= element_view_for(element) do |el| -%>
-    <h1 class="ui inverted header">
+    <h1 class="promo-hero-title"">
       <%= el.render :h1 %>
     </h1>
-    <h2>
+    <p class="promo-hero-description hide-for-small-only">
       <%= el.render :h2 %>
-    </h2>
+    </p>
   <%- end -%>
 <%- end -%>
