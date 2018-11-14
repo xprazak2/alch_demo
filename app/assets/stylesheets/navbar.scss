@@ -1,12 +1,25 @@
 @import '_settings';
 
-.top-menu {
+.menu-wrapper {
   background-color: $dark-gray;
-  a {
-    color: $white;
 
-    &:hover {
-      text-decoration: underline;
+  li {
+      color: $white
     }
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+}
+
+.lang-links {
+  a {
+    display: block;
+    padding: 0.7rem 1rem;
+    line-height: 1;
   }
 }

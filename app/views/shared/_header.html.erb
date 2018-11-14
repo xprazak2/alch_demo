@@ -1,6 +1,23 @@
-<ul class="menu top-menu align-right">
-  <li><a href="#">One</a></li>
-  <li><a href="#">Two</a></li>
-  <li><a href="#">Three</a></li>
-  <li><a href="#">Four</a></li>
-</ul>
+
+<div class="grid-x menu-wrapper header">
+  <div class="cell small-4">
+    <% if header_page %>
+      <ul class="menu top-menu align-left">
+        <%= render_elements(only: 'motd', from_page: header_page) %>
+      </ul>
+    <% end %>
+  </div>
+
+  <div class="cell small-4">
+    <ul class="menu top-menu"><%= language_links %></ul>
+  </div>
+
+  <div class="cell small-4">
+    <ul class="menu top-menu align-right">
+      <li><a href="#">One</a></li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+      <li><a href="#">Four</a></li>
+    </ul>
+  </div>
+</div>

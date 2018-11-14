@@ -1,0 +1,6 @@
+<%- cache(element) do -%>
+  <%= element_view_for(element, :tag => 'li') do |el| -%>
+      <a href="#"><%= el.render :motd_text %></a>
+    </ul>
+  <%- end -%>
+<%- end -%>

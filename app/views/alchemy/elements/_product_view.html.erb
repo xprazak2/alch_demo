@@ -1,0 +1,8 @@
+<%- cache(element) do -%>
+  <%= element_view_for(element, :class => "cell") do |el| -%>
+      <img class="thumbnail" src="https://placehold.it/500x600">
+      <h5><%= el.render :name %></h5>
+      <p><%= el.render :price %></p>
+    </div>
+  <%- end -%>
+<%- end -%>

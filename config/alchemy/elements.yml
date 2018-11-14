@@ -29,3 +29,25 @@
     type: EssenceText
     default: :main_title
     hint: true
+
+- name: motd
+  unique: true
+  contents:
+  - name: motd_text
+    type: EssenceText
+    default: motd_text
+    hint: true
+
+- name: product
+  contents:
+  - name: name
+    type: EssenceText
+    default: 'Product Title'
+    hint: true
+  - name: description
+    type: EssenceText
+    default: 'Product Description'
+  - name: price
+    type: EssenceText
+  - name: picture
+    type: EssencePicture

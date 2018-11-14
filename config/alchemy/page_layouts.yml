@@ -6,3 +6,22 @@
   unique: true
   elements: [main_title]
   autogenerate: [main_title]
+
+- name: products_thumbnails
+  unique: true
+  elements: [product]
+  autogenerate: [product]
+
+- name: products_portfolio
+  unique: true
+  elements: [product]
+  autogenerate: [product]
+
+# global pages
+
+- name: header
+  unique: true
+  layoutpage: true
+  elements: [motd]
+  autogenerate: [motd]
+
