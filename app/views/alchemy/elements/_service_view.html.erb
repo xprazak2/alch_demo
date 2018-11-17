@@ -1,0 +1,14 @@
+<%- cache(element) do -%>
+  <%= element_view_for(element) do |el| -%>
+    <div class="media-object stack-for-small">
+      <div class="media-object-section">
+        <img class="thumbnail" src="https://placehold.it/200x200">
+      </div>
+      <div class="media-object-section">
+        <h5><%= el.render :name %></h5>
+        <h7><%= el.render :price %></h7>
+        <p><%= el.render :description%></p>
+      </div>
+    </div>
+  <%- end -%>
+<%- end -%>

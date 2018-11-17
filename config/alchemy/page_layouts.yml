@@ -8,14 +8,11 @@
   autogenerate: [main_title]
 
 - name: products_thumbnails
-  unique: true
-  elements: [product]
-  autogenerate: [product]
+  elements: [service]
 
 - name: products_portfolio
   unique: true
   elements: [product]
-  autogenerate: [product]
 
 # global pages
 
